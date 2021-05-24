@@ -12,8 +12,8 @@ export const mediasoupConfig: IMediasoupConfig = {
     totalWorkers: cpus().length,
     worker: {
         logLevel: 'warn',
-        rtcMinPort: 1000,
-        rtcMaxPort: 5000,
+        rtcMinPort: 80,
+        rtcMaxPort: 443,
     },
     router: {
         mediaCodecs: [
