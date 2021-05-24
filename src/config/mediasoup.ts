@@ -11,7 +11,9 @@ export interface IMediasoupConfig {
 export const mediasoupConfig: IMediasoupConfig = {
     totalWorkers: cpus().length,
     worker: {
-        logLevel: 'warn'
+        logLevel: 'warn',
+        rtcMinPort: 1000,
+        rtcMaxPort: 5000,
     },
     router: {
         mediaCodecs: [
